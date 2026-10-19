@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-brand-dark: #00171c;
+    --color-brand-teal: #004250;
+    --color-brand-gold: #f9c54b;
+    --color-brand-blue: #88bbd8;
+    --color-surface-light: #ffffff;
+    --color-surface-subtle: #f3f5f6;
+    --color-border-line: #d5dde0;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom Print View for Carrier Submissions & Legal Filings */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #111827 !important;
+  }
+
+  header, 
+  nav, 
+  .no-print, 
+  button.print-exclude {
+    display: none !important;
+  }
+
+  .print-surface {
+    background-color: #ffffff !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .compliance-callout-print {
+    border: 2px solid #004250 !important;
+    background-color: #f8fafc !important;
+    color: #00171c !important;
+    page-break-inside: avoid;
+  }
+
+  .page-break-inside-avoid {
+    page-break-inside: avoid;
+  }
+
+  a {
+    text-decoration: underline !important;
+    color: #004250 !important;
+  }
+}

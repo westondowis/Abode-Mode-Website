@@ -1,0 +1,6 @@
+{
+  "name": "Abode Mode - A2P 10DLC Privacy Policy",
+  "description": "Carrier-compliant, official Privacy Policy and SMS disclosure documentation for ABODE-MODE LLC.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
